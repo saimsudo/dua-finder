@@ -1,0 +1,2 @@
+export const metadata={title:'Privacy Policy',description:'Privacy Policy for Dua Finder.'};
+export default function Page(){return <div className="containerx max-w-3xl py-12"><h1 className="text-4xl font-bold">Privacy Policy</h1><p className="mt-4 text-slate-600 dark:text-slate-300">Dua Finder respects user privacy. Bookmarks and recently viewed duas are stored locally in the user’s browser. If ads or analytics are added, update this policy with details about cookies and third-party services.</p></div>}

@@ -1,0 +1,3 @@
+import { Metadata } from 'next';import DuaCard from '@/components/DuaCard';import SearchBar from '@/components/SearchBar';import { duas } from '@/data/duas';
+export const metadata:Metadata={title:'All Authentic Islamic Duas',description:'Browse all Islamic duas with Arabic, Urdu, English translation, transliteration, references and benefits.'};
+export default function DuasPage(){return <div className="containerx py-12"><h1 className="text-4xl font-bold">All Islamic Duas</h1><p className="mt-3 max-w-2xl text-slate-600 dark:text-slate-300">Browse searchable duas for daily life, protection, rizq, sleep, anxiety, and more.</p><div className="mt-8"><SearchBar/></div><div className="mt-10 grid gap-6 md:grid-cols-3">{duas.map(d=><DuaCard key={d.id} dua={d}/>)}</div></div>}

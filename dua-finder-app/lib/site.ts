@@ -1,0 +1,1 @@
+export const site = {name:'Dua Finder',url:process.env.NEXT_PUBLIC_SITE_URL || 'https://yourdomain.com',description:'Find authentic Islamic duas with Arabic, Urdu, English translation, transliteration, references, benefits, and recitation guidance.'};

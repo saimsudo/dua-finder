@@ -1,0 +1,2 @@
+import Link from 'next/link';import { slugify } from '@/data/duas';
+export default function CategoryCard({name}:{name:string}){return <Link href={`/category/${slugify(name)}`} className="card group p-5 text-center hover:-translate-y-1"><div className="mx-auto grid h-12 w-12 place-items-center rounded-2xl bg-brand text-gold">✦</div><h3 className="mt-3 font-bold group-hover:text-brand dark:group-hover:text-gold">{name}</h3><p className="mt-1 text-xs text-slate-500">Find authentic duas</p></Link>}
