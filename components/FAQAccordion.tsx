@@ -1,0 +1,1 @@
+export default function FAQAccordion({faqs}:{faqs:{question:string;answer:string}[]}){return <div className="grid gap-3">{faqs.map((f,i)=><details key={i} className="card p-5"><summary className="cursor-pointer font-semibold">{f.question}</summary><p className="mt-3 text-slate-600 dark:text-slate-300">{f.answer}</p></details>)}</div>}

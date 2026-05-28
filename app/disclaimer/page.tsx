@@ -1,0 +1,2 @@
+export const metadata={title:'Disclaimer',description:'Islamic content disclaimer for Dua Finder.'};
+export default function Page(){return <div className="containerx max-w-3xl py-12"><h1 className="text-4xl font-bold">Disclaimer</h1><p className="mt-4 text-slate-600 dark:text-slate-300">Dua Finder provides Islamic educational content. We aim to include references, but users should verify religious matters with trusted scholars and authentic sources.</p></div>}

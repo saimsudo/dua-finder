@@ -1,0 +1,2 @@
+export const metadata={title:'Terms & Conditions',description:'Terms and conditions for Dua Finder.'};
+export default function Page(){return <div className="containerx max-w-3xl py-12"><h1 className="text-4xl font-bold">Terms & Conditions</h1><p className="mt-4 text-slate-600 dark:text-slate-300">By using Dua Finder, you agree to use the website for educational and personal Islamic learning purposes. Content should not replace qualified scholarly advice.</p></div>}

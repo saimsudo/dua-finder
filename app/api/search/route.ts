@@ -1,0 +1,2 @@
+import { NextResponse } from 'next/server';import { searchDuas,sanitizeQuery } from '@/lib/search';
+export async function GET(req:Request){const {searchParams}=new URL(req.url);const q=sanitizeQuery(searchParams.get('q')||'');const results=searchDuas(q).map(d=>({title:d.title,slug:d.slug,category:d.category,excerpt:d.englishTranslation.slice(0,130)}));return NextResponse.json({query:q,results},{headers:{'Cache-Control':'public, max-age=30'}})}
